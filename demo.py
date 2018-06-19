@@ -16,6 +16,6 @@ if __name__ == '__main__':
     image = image * map
     image = image.astype(np.uint8)
 
-    cv.imwrite('face_merged,png', image)
+    cv.imwrite('face_merged.png', image)
 
 
