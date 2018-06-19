@@ -26,8 +26,7 @@ if __name__ == '__main__':
     image = image.astype(np.uint8)
 
     map = map * 255.
-    map = np.min(255, map)
-    map = np.max(0, map)
+    map = np.clip(map, 0, 255)
     map = map.astype(np.uint8)
 
     cv.imwrite('map.png', map)
